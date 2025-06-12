@@ -1,0 +1,80 @@
+
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 200
+>>
+stream
+BT
+/F1 12 Tf
+72 720 Td
+(Niel Abhishek J David) Tj
+0 -20 Td
+(Computer Science Engineering Student & Full Stack Developer) Tj
+0 -40 Td
+(Email: nielabhishek6265852@gmail.com) Tj
+0 -20 Td
+(Phone: +91 6360701051) Tj
+0 -20 Td
+(Location: Bangalore 560 058) Tj
+0 -40 Td
+(This is a placeholder resume file.) Tj
+0 -20 Td
+(Please replace this with your actual resume PDF.) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 6
+0000000000 65535 f 
+0000000010 00000 n 
+0000000053 00000 n 
+0000000110 00000 n 
+0000000254 00000 n 
+0000000505 00000 n 
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+562
+%%EOF

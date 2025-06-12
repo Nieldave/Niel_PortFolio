@@ -52,13 +52,13 @@ const Contact = () => {
     {
       icon: Github,
       name: 'GitHub',
-      url: '#',
+      url: 'https://github.com/Nieldave',
       color: 'hover:text-gray-800',
     },
     {
       icon: Linkedin,
       name: 'LinkedIn',
-      url: '#',
+      url: 'https://www.linkedin.com/in/niel-abhishek-j-david-a81b49230',
       color: 'hover:text-blue-600',
     },
     {
@@ -120,6 +120,8 @@ const Contact = () => {
                     <a
                       key={index}
                       href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`p-3 bg-gray-100 rounded-lg text-gray-600 ${social.color} transition-all duration-300 transform hover:scale-110 hover:shadow-lg`}
                     >
                       <social.icon size={24} />

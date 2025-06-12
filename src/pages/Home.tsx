@@ -5,6 +5,11 @@ import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import PageLayout from '../components/PageLayout';
 
 const Home = () => {
+  const handleResumeDownload = () => {
+    // Open the resume PDF in a new tab
+    window.open('/resume.pdf', '_blank');
+  };
+
   return (
     <PageLayout>
       <div className="container mx-auto px-4 py-20">
@@ -39,7 +44,10 @@ const Home = () => {
                 View My Work
                 <ArrowRight className="ml-2" size={20} />
               </Link>
-              <button className="inline-flex items-center justify-center px-8 py-3 border-2 border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105">
+              <button 
+                onClick={handleResumeDownload}
+                className="inline-flex items-center justify-center px-8 py-3 border-2 border-blue-600 text-blue-600 font-medium rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105"
+              >
                 <Download className="mr-2" size={20} />
                 Download Resume
               </button>
@@ -54,13 +62,17 @@ const Home = () => {
                 <Mail size={24} className="text-blue-600" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/niel-abhishek-j-david-a81b49230"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-blue-50"
               >
                 <Linkedin size={24} className="text-blue-600" />
               </a>
               <a
-                href="#"
+                href="https://github.com/Nieldave"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-blue-50"
               >
                 <Github size={24} className="text-blue-600" />
@@ -87,9 +99,8 @@ const Home = () => {
         </div>
 
         {/* Quick Stats */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { number: '3+', label: 'Years Experience' },
             { number: '10+', label: 'Projects Completed' },
             { number: '15+', label: 'Technologies' },
             { number: '4', label: 'Certifications' },
