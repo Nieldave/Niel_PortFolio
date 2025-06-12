@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ExternalLink, Github, Star } from 'lucide-react';
 import PageLayout from '../components/PageLayout';
@@ -17,6 +16,7 @@ const Projects = () => {
       ],
       status: 'Featured',
       gradient: 'from-purple-400 to-purple-600',
+      githubUrl: 'https://github.com/Nieldave/digitalWardrobe.git',
     },
     {
       title: 'Fashion Recommendation System',
@@ -30,6 +30,7 @@ const Projects = () => {
       ],
       status: 'Production',
       gradient: 'from-pink-400 to-pink-600',
+      githubUrl: 'https://github.com/Nieldave/Fashion-Recommendation-system.git',
     },
     {
       title: 'Smart Infrastructure Monitoring',
@@ -43,6 +44,7 @@ const Projects = () => {
       ],
       status: 'Enterprise',
       gradient: 'from-green-400 to-green-600',
+      githubUrl: 'https://github.com/Nieldave/Energy-Monitoring-using-ml.git',
     },
     {
       title: 'Cloud-Based Attendance System',
@@ -56,6 +58,7 @@ const Projects = () => {
       ],
       status: 'Complete',
       gradient: 'from-blue-400 to-blue-600',
+      githubUrl: 'https://github.com/Nieldave/Cloud-Based-Attendance-System',
     },
     {
       title: 'E-commerce Fraud Detection',
@@ -69,6 +72,7 @@ const Projects = () => {
       ],
       status: 'Live',
       gradient: 'from-red-400 to-red-600',
+      githubUrl: '', // Add your GitHub URL here later
     },
   ];
 
@@ -137,14 +141,22 @@ const Projects = () => {
 
                       {/* Action Buttons */}
                       <div className="flex gap-4">
-                        <button className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                          <ExternalLink className="mr-2" size={20} />
-                          Live Demo
-                        </button>
-                        <button className="inline-flex items-center px-6 py-3 border-2 border-gray-300 text-gray-700 font-medium rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-105">
-                          <Github className="mr-2" size={20} />
-                          Source Code
-                        </button>
+                        {project.githubUrl ? (
+                          <a
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-6 py-3 border-2 border-gray-300 text-gray-700 font-medium rounded-lg hover:border-blue-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-105"
+                          >
+                            <Github className="mr-2" size={20} />
+                            Source Code
+                          </a>
+                        ) : (
+                          <span className="inline-flex items-center px-6 py-3 border-2 border-gray-200 text-gray-400 font-medium rounded-lg cursor-not-allowed">
+                            <Github className="mr-2" size={20} />
+                            Source Code (Coming Soon)
+                          </span>
+                        )}
                       </div>
                     </div>
 
