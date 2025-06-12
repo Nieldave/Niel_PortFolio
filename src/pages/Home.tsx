@@ -86,7 +86,7 @@ const Home = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-600 rounded-3xl transform rotate-6 scale-105 opacity-20"></div>
               <div className="relative bg-white p-2 rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500">
                 <img
-                  src="/lovable-uploads/58298249-830a-4166-b881-bfb0375d3dda.png"
+                  src="/uploads/58298249-830a-4166-b881-bfb0375d3dda.png"
                   alt="Niel Abhishek J David"
                   className="w-96 h-96 object-cover rounded-2xl"
                 />

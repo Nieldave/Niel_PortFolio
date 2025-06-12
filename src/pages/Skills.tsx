@@ -10,10 +10,10 @@ const Skills = () => {
       icon: Code,
       skills: [
         { name: 'Python', level: 95, color: 'from-yellow-400 to-yellow-600' },
-        { name: 'JavaScript', level: 90, color: 'from-yellow-300 to-yellow-500' },
+        { name: 'JavaScript', level: 85, color: 'from-yellow-300 to-yellow-500' },
         { name: 'TypeScript', level: 85, color: 'from-blue-400 to-blue-600' },
         { name: 'Java', level: 80, color: 'from-red-400 to-red-600' },
-        { name: 'C++', level: 75, color: 'from-purple-400 to-purple-600' },
+        { name: 'C++', level: 70, color: 'from-purple-400 to-purple-600' },
         { name: 'SQL', level: 88, color: 'from-green-400 to-green-600' },
       ],
     },
@@ -23,7 +23,7 @@ const Skills = () => {
       skills: [
         { name: 'React', level: 92, color: 'from-cyan-400 to-cyan-600' },
         { name: 'HTML/CSS', level: 95, color: 'from-orange-400 to-orange-600' },
-        { name: 'Bootstrap', level: 85, color: 'from-purple-400 to-purple-600' },
+        { name: 'Bootstrap', level: 65, color: 'from-purple-400 to-purple-600' },
         { name: 'Angular', level: 75, color: 'from-red-400 to-red-600' },
       ],
     },
