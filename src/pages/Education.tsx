@@ -69,7 +69,7 @@ const Education = () => {
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-gray-600">
                 <span>Jan 2023 – Present</span>
-                <span className="font-semibold">CGPA: 7.61/10</span>
+                <span className="font-semibold">CGPA: 7.73/10</span>
               </div>
               <p className="text-gray-700 mt-4 leading-relaxed">
                 Pursuing comprehensive education in computer science with focus on software engineering, 
@@ -115,7 +115,7 @@ const Education = () => {
             <h2 className="text-2xl font-bold text-gray-800 mb-6">Academic Highlights</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center p-6 bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl">
-                <div className="text-3xl font-bold text-blue-600 mb-2">7.61</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">7.73</div>
                 <div className="text-gray-700">Current CGPA</div>
               </div>
               <div className="text-center p-6 bg-gradient-to-r from-green-50 to-green-100 rounded-xl">
